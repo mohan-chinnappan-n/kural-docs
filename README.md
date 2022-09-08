@@ -3,6 +3,14 @@
 
 ## Utils for everyone!
 
+# Topics
+- [Install](#install)
+- [Commands and Demos](#commands)
+  - [sf:login](#sf:login)
+
+
+<a name='install></a>
+
 ## Install
 ```
 # linux and mac
@@ -17,8 +25,11 @@ npm -g kural
 
 -------
 
+<a name='commands'></a>
 
 # Commands and Demos
+
+<a name='sf:login></a>
 
 ## sf:login
 
