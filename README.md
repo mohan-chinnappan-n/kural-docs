@@ -15,7 +15,10 @@
   - [sf:data:query](#dataquery)
   - [sf:tooling:query](#toolingquery)
   - [sf:tooling:audit](#audit)
-]
+  - [browser:auto](#auto)
+
+  - [dot2svg](#dot2svg)
+
 
   
   - [lighthouse](#lh)
@@ -235,8 +238,8 @@ cat mobile_cfg.json
 
 - [![Mobile test demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/mobile-1.webm.gif)](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/mobile-1.webm.gif)
  
-
-## Dot2SVG 
+<a name='dot2svg'></a>
+## dot2svg 
 - Generates SVG for a given dot file
 
 ```
@@ -301,6 +304,7 @@ kural sf:tooling:audit -s Account -a mohan.chinnappan.n_ea2_at_gmail.com.json
 
 -----
 
+<a name='auto'></a>
 ##  kural browser:auto 
 ```
 # Run optimizer report with auth file
