@@ -9,8 +9,7 @@
   - [sf:login](#sflogin)
 
 
-<a name='install></a>
-
+<a name='install'></a>
 ## Install
 ```
 # linux and mac
@@ -29,7 +28,7 @@ npm -g kural
 
 # Commands and Demos
 
-<a name='sflogin></a>
+<a name='sflogin'></a>
 
 ## sf:login
 
