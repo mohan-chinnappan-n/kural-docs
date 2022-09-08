@@ -15,14 +15,17 @@
   - [sf:data:query](#dataquery)
   - [sf:tooling:query](#toolingquery)
   - [sf:tooling:audit](#audit)
+------
   - [browser:auto](#auto)
-
+-----
   - [dot2svg](#dot2svg)
 
-
+------
   
   - [lighthouse](#lh)
+-----
   - [Mobile test - browser:mobile ](#mobiletest)
+----
   - [Perf test - browser:perfTest ](#perf)
 
 
