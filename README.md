@@ -11,7 +11,14 @@ sudo npm -g kural
 npm -g kural
 
 ```
+## Chrome Driver
 
+- Download the [Chrome Driver file](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/browser/chromedriver) and put this in your PATH
+
+-------
+
+
+# Command
 ## sf:login
 
 ```
