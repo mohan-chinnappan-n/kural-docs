@@ -3,6 +3,15 @@
 
 ## Utils for everyone!
 
+## Install
+```
+# mac
+sudo npm -g kural
+# windows
+npm -g kural
+
+```
+
 ## sf:login
 
 ```
