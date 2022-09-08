@@ -1,6 +1,6 @@
 # Kural
 
-- Name 'Kural' is inspired from
+- Name **Kural** is inspired from
   -  [Tirukkuṟaḷ](https://en.wikipedia.org/wiki/Kural) for its universality and secular nature 
   -  [curl](https://en.wikipedia.org/wiki/CURL) for its usefulness
 
