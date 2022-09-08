@@ -6,7 +6,7 @@
 # Topics
 - [Install](#install)
 - [Commands and Demos](#commands)
-  - [sf:login](#sf:login)
+  - [sf:login](#sflogin)
 
 
 <a name='install></a>
@@ -29,7 +29,7 @@ npm -g kural
 
 # Commands and Demos
 
-<a name='sf:login></a>
+<a name='sflogin></a>
 
 ## sf:login
 
