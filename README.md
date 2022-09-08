@@ -18,7 +18,8 @@ npm -g kural
 -------
 
 
-# Command
+# Commands and Demos
+
 ## sf:login
 
 ```
