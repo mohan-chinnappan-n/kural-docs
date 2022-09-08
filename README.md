@@ -5,7 +5,7 @@
 
 ## Install
 ```
-# mac
+# linux and mac
 sudo npm -g kural
 # windows
 npm -g kural
