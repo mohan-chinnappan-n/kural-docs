@@ -402,6 +402,8 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true
 - Translation verification 
  ![en2ja-1](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/en2ja-1.png)
 
+ - [Languages supported -  around 445](https://github.com/mohan-chinnappan-n/kural-docs/blob/master/src/locales.ts)
+
 
 --------
 
