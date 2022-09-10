@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Viz</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+    
+    
+    </head>
+    <body>
+        <div id="viz"></div>
+    
+        <script type="text/javascript">
+        const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Field Usage for Lead ",
+  "description": "Field Usage Bar Chart.",
+  "data": {
+    "values": [
+      {"sobject": "Lead", "name": "Id", "count": 25, "total": 25, "usage": 100},
+      {
+        "sobject": "Lead",
+        "name": "MasterRecordId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastName",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "FirstName",
+        "count": 24,
+        "total": 25,
+        "usage": 96
+      },
+      {
+        "sobject": "Lead",
+        "name": "Salutation",
+        "count": 23,
+        "total": 25,
+        "usage": 92
+      },
+      {
+        "sobject": "Lead",
+        "name": "Name",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "Title",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "Company",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "Street",
+        "count": 3,
+        "total": 25,
+        "usage": 12
+      },
+      {"sobject": "Lead", "name": "City", "count": 3, "total": 25, "usage": 12},
+      {
+        "sobject": "Lead",
+        "name": "State",
+        "count": 20,
+        "total": 25,
+        "usage": 80
+      },
+      {
+        "sobject": "Lead",
+        "name": "PostalCode",
+        "count": 3,
+        "total": 25,
+        "usage": 12
+      },
+      {
+        "sobject": "Lead",
+        "name": "Country",
+        "count": 23,
+        "total": 25,
+        "usage": 92
+      },
+      {
+        "sobject": "Lead",
+        "name": "Latitude",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "Longitude",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "GeocodeAccuracy",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "Phone",
+        "count": 23,
+        "total": 25,
+        "usage": 92
+      },
+      {
+        "sobject": "Lead",
+        "name": "MobilePhone",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {"sobject": "Lead", "name": "Fax", "count": 2, "total": 25, "usage": 8},
+      {
+        "sobject": "Lead",
+        "name": "Email",
+        "count": 23,
+        "total": 25,
+        "usage": 92
+      },
+      {
+        "sobject": "Lead",
+        "name": "Website",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "PhotoUrl",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "LeadSource",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "Status",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "Industry",
+        "count": 2,
+        "total": 25,
+        "usage": 8
+      },
+      {
+        "sobject": "Lead",
+        "name": "Rating",
+        "count": 2,
+        "total": 25,
+        "usage": 8
+      },
+      {
+        "sobject": "Lead",
+        "name": "CurrencyIsoCode",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "AnnualRevenue",
+        "count": 2,
+        "total": 25,
+        "usage": 8
+      },
+      {
+        "sobject": "Lead",
+        "name": "NumberOfEmployees",
+        "count": 1,
+        "total": 25,
+        "usage": 4
+      },
+      {
+        "sobject": "Lead",
+        "name": "OwnerId",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "ConvertedDate",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "ConvertedAccountId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "ConvertedContactId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "ConvertedOpportunityId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "CreatedDate",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "CreatedById",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastModifiedDate",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastModifiedById",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "SystemModstamp",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastActivityDate",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastViewedDate",
+        "count": 1,
+        "total": 25,
+        "usage": 4
+      },
+      {
+        "sobject": "Lead",
+        "name": "LastReferencedDate",
+        "count": 1,
+        "total": 25,
+        "usage": 4
+      },
+      {
+        "sobject": "Lead",
+        "name": "Jigsaw",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "JigsawContactId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "CleanStatus",
+        "count": 25,
+        "total": 25,
+        "usage": 100
+      },
+      {
+        "sobject": "Lead",
+        "name": "CompanyDunsNumber",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "DandbCompanyId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "EmailBouncedReason",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "EmailBouncedDate",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "IndividualId",
+        "count": 0,
+        "total": 25,
+        "usage": 0
+      },
+      {
+        "sobject": "Lead",
+        "name": "SICCode__c",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "ProductInterest__c",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "Primary__c",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "CurrentGenerators__c",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      },
+      {
+        "sobject": "Lead",
+        "name": "NumberofLocations__c",
+        "count": 22,
+        "total": 25,
+        "usage": 88
+      }
+    ]
+  },
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 270}},
+    "y": {"field": "usage", "type": "quantitative"}
+  }
+}
+;
+        vegaEmbed('#viz', spec);
+
+        </script>
+    
+        </body>
+        </html>
+   
