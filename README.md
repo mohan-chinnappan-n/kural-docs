@@ -19,6 +19,8 @@
   - [browser:auto](#auto)
 -----
   - [dot2svg](#dot2svg)
+  - [viz:dwg:mermaid](#merimaidEd)
+  - [viz:uml:seq](#umlSeqEd)
 
 ------
   
@@ -254,10 +256,107 @@ cat mobile_cfg.json
 - Generates SVG for a given dot file
 
 ```
-dot2svg -i input.dot -r [dot, circo, fdp, neato, osage, twopi]
+kural viz:dot2svg -i erd-1.dot -r dot -e y
 
 # dot is default
+# flag e opens up the editor
 ```
+
+```
+cat erd-1.dot
+```
+
+```
+graph ER {
+	node [shape=box]; course; institute; student;
+	node [shape=ellipse]; {node [label="name"] name0; name1; name2;}
+		code; grade; number;
+	node [shape=diamond,style=filled,color=lightgrey]; "C-I"; "S-C"; "S-I";
+
+	name0 -- course;
+	code -- course;
+	course -- "C-I" [label="n",len=1.00];
+	"C-I" -- institute [label="1",len=1.00];
+	institute -- name1;
+	institute -- "S-I" [label="1",len=1.00];
+	"S-I" -- student [label="n",len=1.00];
+	student -- grade;
+	student -- name2;
+	student -- number;
+	student -- "S-C" [label="m",len=1.00];
+	"S-C" -- course [label="n",len=1.00];
+
+	label = "\n\nEntity Relation Diagram";
+	fontsize=20;
+}
+```
+
+<a name='mermaidEd'></a>
+##  Mermaid Drawing Editor 
+- Opens up the Mermaid Drawing Editor with given input file content 
+
+```
+viz:dwg:mermaid -i gantt-1.dwg   -e y
+# flag e opens up the editor
+```
+
+```
+cat gantt-1.dwg
+```
+
+```
+ gantt
+    title Deployment Plan
+    dateFormat  YYYY-MM-DD
+    section ReleaseCalender
+    Recieve   :a1, 2022-06-04, 2d
+    Finalize     :a2, after a1  , 1d
+    section Prepare For Release
+    Prepare ORGs      :b1, after a2, 1d
+    Run health checks :b2, after b1, 1d
+    section  Pre-deployment steps
+    Perform : c1, after b1, 2d
+    section Communications
+    Via DL and Slack:e1, after c1, 4d
+    section  Pipeline
+    Create Package: d1, after c1, 1d
+    Validate Package: d2, after d1, 1d
+    Deploy Package:d3, after d2,1d
+    section  Post-deployment steps
+    Perform : f3, after d3, 1d
+```
+
+ 
+
+
+
+<a name='umlSeqEd'></a>
+##  UML Seq diagram editor
+- Opens up the UML Seq Drawing Editor with given input file content 
+
+
+
+```
+viz:uml:seq -i farmer.seq.txt  -e y
+# flag e opens up the editor
+```
+
+```
+cat farmer.seq.txt
+```
+
+```
+Title: Farmer and Nature
+Nature->Rain:Rains
+Rain->Land: Falls
+Note right of Land: Thank you!
+Land->Farmer:Start farming!
+Farmer->Nature: Thanks you Lovely Nature!
+Farmer->Nature: I am planting more trees!
+```
+
+
+
 
 <a name='dataquery'></a>
 ## sf:data:query
