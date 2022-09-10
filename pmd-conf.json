@@ -1,0 +1,10 @@
+{
+   "label": "PMD Scan of Apex Classes",
+   "pmdBinPath" :"/Users/mchinnappan/node-pmd/pmd-bin-6.47.0/bin/pmd-run.sh",
+   "ruleSetFile": "/Users/mchinnappan/.pmd/apex_ruleset.xml",
+
+   "sourcePath" :"/Users/mchinnappan/kural-demos/unpackaged/classes/",
+   "outputFormat": "html",
+   "outputFile" : "./pmd_results.html"
+
+}
