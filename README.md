@@ -371,7 +371,7 @@ kural scanner:pmd:scan -r pmd-conf.json
 ##  kural i18n:translate
 - Translates a given sentence into various languages 
   and provides verification Google Translate URL (optionally) to verify the translation work
-
+- Uses Google Translate
 
 ```
 # Translate to French
@@ -392,7 +392,7 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true
 おはようございます、友達！
 
  ```
-
+- Translation verification 
  ![en2ja-1](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/en2ja-1.png)
 
 
