@@ -573,8 +573,6 @@ kural data:viz:vega -i field-usage.json
 
 - ![field-usage chart](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/field-usage-1.png)
 
-```
-
 
 
 -----
