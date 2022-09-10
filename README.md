@@ -34,9 +34,9 @@
 ## Install
 ```
 # linux and mac
-sudo npm -g kural
+sudo npm i -g kural
 # windows
-npm -g kural
+npm i -g kural
 
 ```
 ## Chrome Driver
