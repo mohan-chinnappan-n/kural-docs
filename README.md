@@ -31,6 +31,9 @@
 ----
   - [PMD Scan](#pmdscan)
 
+----
+  - [Translate](#translate)
+
 
 
 <a name='install'></a>
@@ -361,6 +364,38 @@ kural scanner:pmd:scan -r pmd-conf.json
 === Opening ./pmd_results.html ===
 ```
 
+----
+
+
+<a name='translate'></a>
+##  kural i18n:translate
+- Translates a given sentence into various languages 
+  and provides verification Google Translate URL (optionally) to verify the translation work
+
+
+```
+# Translate to French
+ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t fr
+ Bonjour les amis!
+
+# Translate to Tamil
+kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ta        
+காலை வணக்கம் நண்பர்களே!
+
+# Translate to Telugu
+kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t te      
+காலை வணக்கம் நண்பர்களே!
+
+# Translate to Japanese and launch google translate to verify the translation work
+kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true     
+おはようございます、友達！
+
+ ```
+
+ ![en2ja-1](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/en2ja-1.png)
+
+
+--------
 
 
 - Built by [Mohan Chinnappan](https://www.linkedin.com/in/mohan-chinnappan-232ab632/) with ♥
