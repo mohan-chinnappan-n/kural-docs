@@ -33,6 +33,7 @@
 
 ----
   - [Translate](#translate)
+  - [Prepare for Translation](#prep_translate)
 
 
 
@@ -406,6 +407,54 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true
 
 
 --------
+
+<a name='prep_translate'></a>
+## kural i18n:prepare 
+- Prepares xml file for processing and optionally translate 
+
+```
+cat input.txt  
+```
+```                                  
+Good Morning, Friends!
+Today is a Wonderful day!
+```
+
+- Prepare without translation
+```
+kural i18n:prepare -i input.txt -f en -t  fr -x n
+```
+```xml
+<Media type="AEP" stringCount="2">
+	<String source="Good Morning, Friends!">Good Morning, Friends!</String>
+	<String source="Today is a Wonderful day!">Today is a Wonderful day!</String>
+
+</Media>
+```
+- Prepare with translation en-fr
+```
+kural i18n:prepare -i input.txt -f en -t  fr -x y
+```
+```xml
+<Media type="AEP" stringCount="2">
+	<String source="Good Morning, Friends!">Bonjour les amis!</String>
+	<String source="Today is a Wonderful day!">Aujourd'hui est une merveilleuse journée!</String>
+
+</Media>
+```
+
+- Prepare with translation en-ja
+```
+kural i18n:prepare -i input.txt -f en -t  ja  -x y
+```
+```xml
+<Media type="AEP" stringCount="2">
+	<String source="Good Morning, Friends!">おはようございます、友達！</String>
+	<String source="Today is a Wonderful day!">今日は素晴らしい日です！</String>
+
+</Media>
+```
+-----
 
 
 - Built by [Mohan Chinnappan](https://www.linkedin.com/in/mohan-chinnappan-232ab632/) with ♥
