@@ -216,7 +216,8 @@ $ cat  optimizer.json
 [![Run Optimizer Demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/run-Optimizer.webm.gif)](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/run-Optimizer.webm.gif)
 
 
-<a name="mobiletest'></a>
+<a name='mobiletest'></a>
+
 ### Mobile test
 ```
 kural browser:mobile -r mobile_cfg.json
