@@ -39,6 +39,8 @@
 
 ----
   - [Data Viz - vega](#vega)
+----
+  - [OCR](#ocr)
 
 
 
@@ -572,6 +574,48 @@ kural data:viz:vega -i field-usage.json
 - [field-usage.json](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/field-usage.json)
 
 - ![field-usage chart](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/field-usage-1.png)
+
+
+
+-----
+
+<a name='ocr'></a>
+
+```
+
+# English page ocr 
+kural ida:ocr -i  eng_bw.png -l eng
+
+
+# Tamil page ocr
+kural ida:ocr -i  tam.png -l tam
+
+```
+
+![eng_bw.png](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/ocr/eng_bw.png)
+```
+cat eng_bw.png.txt 
+```
+```
+Mild Splendour of the various-vested Night!
+Mother of wildly-working visions! haill
+I watch thy gliding, while with watery light
+Thy weak eye glimmers through a fleecy veil;
+And when thou lovest thy pale orb to shroud
+Behind the gather’d blackness lost on high;
+And when thou dartest from the wind-rent cloud
+Thy placid lightning o’er the awaken’d sky.
+```
+
+![eng_bw.png](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/ocr/tam.png)
+```
+```
+cat tam.png.txt 
+```
+
+அகர முதல எழுத்தெல்லாம்‌ ஆதி
+பகவன்‌ முதற்றே உலகு.
+```
 
 
 
