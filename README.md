@@ -387,6 +387,13 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t te
 శుభోదయం మిత్రులారా!
 
 
+# Translate to Marathi
+kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t mr -g true
+सुप्रभात, मित्रांनो!
+
+
+
+
 # Translate to Japanese and launch google translate to verify the translation work
 kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true     
 おはようございます、友達！
