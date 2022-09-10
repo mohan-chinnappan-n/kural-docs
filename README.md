@@ -19,7 +19,7 @@
   - [browser:auto](#auto)
 -----
   - [dot2svg](#dot2svg)
-  - [viz:dwg:mermaid](#merimaidEd)
+  - [viz:dwg:mermaid](#mermaidEd)
   - [viz:uml:seq](#umlSeqEd)
 
 ------
@@ -256,7 +256,7 @@ cat mobile_cfg.json
 - Generates SVG for a given dot file
 
 ```
-kural viz:dot2svg -i erd-1.dot -r dot -e y
+kural viz:graphviz:dot2svg -i erd-1.dot -r dot -e y
 
 # dot is default
 # flag e opens up the editor
