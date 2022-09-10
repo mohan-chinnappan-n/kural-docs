@@ -384,7 +384,8 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ta
 
 # Translate to Telugu
 kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t te      
-காலை வணக்கம் நண்பர்களே!
+శుభోదయం మిత్రులారా!
+
 
 # Translate to Japanese and launch google translate to verify the translation work
 kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true     
@@ -399,4 +400,3 @@ kural i18n:translate -i 'Good Morning, Friends!' -f 'en' -t ja -g true
 
 
 - Built by [Mohan Chinnappan](https://www.linkedin.com/in/mohan-chinnappan-232ab632/) with ♥
-
