@@ -28,6 +28,9 @@
 ----
   - [Perf test - browser:perfTest ](#perf)
 
+----
+  - [PMD Scan](#pmdscan)
+
 
 
 <a name='install'></a>
@@ -316,6 +319,49 @@ kural sf:tooling:audit -s Account -a mohan.chinnappan.n_ea2_at_gmail.com.json
  kural browser:auto -r optimizer.json -a mohan.chinnappan.n.sel_at_gmail.com.json 
  ```
 --------------
+<a name='pmdscan'></a>
+## Run PMD scan
+- [Setup the PMD](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/pmd-codescan.md)
+
+- Retrieve ApexClass or ApexTrigger
+
+```
+sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "ApexClass"
+sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i "09S3h0000073Hw7EAE"
+unzip 09S3h0000073HzeEAE.zip
+
+
+```
+
+```
+cat pmd-conf.json 
+```
+```json
+{
+   "label": "PMD Scan of Apex Classes",
+   "pmdBinPath" :"/Users/mchinnappan/node-pmd/pmd-bin-6.47.0/bin/pmd-run.sh",
+   "ruleSetFile": "/Users/mchinnappan/.pmd/apex_ruleset.xml",
+
+   "sourcePath" :"/Users/mchinnappan/kural-demos/unpackaged/classes/",
+   "outputFormat": "html",
+   "outputFile" : "./pmd_results.html"
+
+}
+
+
+```
+
+```
+kural scanner:pmd:scan -r pmd-conf.json 
+```
+
+```
+=== Command: /Users/mchinnappan/node-pmd/pmd-bin-6.47.0/bin/pmd-run.sh pmd -R /Users/mchinnappan/.pmd/apex_ruleset.xml -d /Users/mchinnappan/kural-demos/unpackaged/classes/ -f html > ./pmd_results.html  ===
+=== Output will be written in ./pmd_results.html ===
+=== Opening ./pmd_results.html ===
+```
+
+
 
 - Built by [Mohan Chinnappan](https://www.linkedin.com/in/mohan-chinnappan-232ab632/) with ♥
 
