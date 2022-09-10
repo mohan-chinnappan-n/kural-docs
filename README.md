@@ -37,6 +37,11 @@
   - [Translate](#translate)
   - [Prepare for Translation](#prep_translate)
 
+----
+  - [Data Viz - vega](#vega)
+
+
+
 
 
 <a name='install'></a>
@@ -553,6 +558,25 @@ kural i18n:prepare -i input.txt -f en -t  ja  -x y
 
 </Media>
 ```
+-----
+
+<a name='vega'></a>
+## kural data:viz:vega
+-   VegaLite chart for the given data
+
+```
+kural data:viz:vega -i field-usage.json
+
+```
+
+- [field-usage.json](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/field-usage.json)
+
+- ![field-usage chart](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/field-usage-1.png)
+
+```
+
+
+
 -----
 
 
