@@ -1,0 +1,3 @@
+SELECT Id, Name, Industry 
+FROM Account
+

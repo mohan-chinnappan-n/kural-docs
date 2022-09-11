@@ -41,6 +41,8 @@
   - [Data Viz - vega](#vega)
 ----
   - [OCR](#ocr)
+----
+  - [CodeGen LWC](#codeGenLWC)
 
 
 
@@ -620,6 +622,29 @@ cat tam.png.txt
 
 
 -----
+
+<a name="codeGenLWC"></a>
+
+## codegen:lwc
+```
+# generates lwc code for accounts.soql
+kural codegen:lwc -i accounts.soql
+
+```
+
+``` 
+cat accounts.soql
+```
+
+```sql
+
+SELECT Id, Name, Industry 
+FROM Account
+
+```
+
+
+----
 
 
 - Built by [Mohan Chinnappan](https://www.linkedin.com/in/mohan-chinnappan-232ab632/) with ♥
