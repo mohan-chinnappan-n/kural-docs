@@ -32,6 +32,7 @@
 
 ----
   - [PMD Scan](#pmdscan)
+  - [PMD New HTML report](#pmdscanHTML)
 
 ----
   - [Translate](#translate)
@@ -474,6 +475,39 @@ kural scanner:pmd:scan -r pmd-conf.json
 ```
 
 ----
+
+<a name='pmdscanHTML'></a>
+## PMD Scan with new HTML report with charts
+
+
+```
+kural scanner:pmd:scan -r pmd-conf.json
+```
+
+```
+cat pmd-conf.json 
+```
+```json
+{
+   "label": "PMD Scan of Apex Classes",
+   "pmdBinPath" :"/Users/mchinnappan/node-pmd/pmd-bin-6.47.0/bin/pmd-run.sh",
+   "ruleSetFile": "/Users/mchinnappan/.pmd/apex_ruleset.xml",
+
+   "sourcePath" :"/Users/mchinnappan/kural-demos/unpackaged/classes/",
+   "outputFormat": "xml",
+   "outputFile" : "./pmd-results.xml"
+
+}
+```
+
+
+```
+kural data:transform:xslt -i pmd-results.xml -t pmd-report.xslt > pmd-results.html
+```
+
+![HTML Report demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/new_pmd-report-1.gif)
+----
+
 
 
 <a name='translate'></a>
