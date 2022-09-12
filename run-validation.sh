@@ -1,1 +1,1 @@
-sfdx mohanc:mdapi:deploy -u  mohan.chinnappan.n_ea2@gmail.com -z 09S3h0000073HzeEAE.zip.txt -o options.json
+sfdx mohanc:mdapi:deploy -u  mohan.chinnappan.n.sel@gmail.com -z 09S4x00000CJbY9EAL.zip.txt -o options.json

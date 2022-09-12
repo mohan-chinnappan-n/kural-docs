@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.47.0" timestamp="2022-09-12T06:06:36.996" >
+
+
+<file name="/Users/mchinnappan/kural-demos/unpackaged/classes/FieldAuditor.cls">
+<violation beginline="8" endline="271" begincolumn="14" endcolumn="1" rule="ExcessivePublicCount" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#excessivepubliccount" priority="3">
+This class has too many public methods and attributes
+</violation>
+<violation beginline="33" endline="33" begincolumn="26" endcolumn="37" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'SFObjectList' starts with uppercase character.
+</violation>
+<violation beginline="84" endline="204" begincolumn="17" endcolumn="5" rule="CognitiveComplexity" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#cognitivecomplexity" priority="3">
+The method 'gatherFieldData()' has a cognitive complexity of 15, current threshold is 15
+</violation>
+<violation beginline="84" endline="204" begincolumn="17" endcolumn="5" rule="NcssMethodCount" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#ncssmethodcount" priority="3">
+The method gatherFieldData() has an NCSS line count of 69
+</violation>
+<violation beginline="88" endline="88" begincolumn="28" endcolumn="36" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'OppSchema' starts with uppercase character.
+</violation>
+<violation beginline="101" endline="101" begincolumn="23" endcolumn="37" rule="ApexSuggestUsingNamedCred" ruleset="Security" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_security.html#apexsuggestusingnamedcred" priority="3">
+Consider using named credentials for authenticated callouts
+</violation>
+<violation beginline="176" endline="176" begincolumn="33" endcolumn="49" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'LastModifiedByMap' starts with uppercase character.
+</violation>
+<violation beginline="212" endline="212" begincolumn="13" endcolumn="27" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="212" endline="212" begincolumn="13" endcolumn="27" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="214" endline="214" begincolumn="30" endcolumn="33" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Less' starts with uppercase character.
+</violation>
+<violation beginline="215" endline="215" begincolumn="30" endcolumn="36" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Greater' starts with uppercase character.
+</violation>
+<violation beginline="224" endline="224" begincolumn="22" endcolumn="28" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="224" endline="224" begincolumn="22" endcolumn="28" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="226" endline="226" begincolumn="25" endcolumn="31" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="226" endline="226" begincolumn="25" endcolumn="31" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="240" endline="265" begincolumn="32" endcolumn="5" rule="MethodNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#methodnamingconventions" priority="3">
+Method name does not begin with a lower case character.
+</violation>
+<violation beginline="240" endline="240" begincolumn="66" endcolumn="75" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'ListToSort' starts with uppercase character.
+</violation>
+<violation beginline="243" endline="243" begincolumn="13" endcolumn="30" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="243" endline="243" begincolumn="13" endcolumn="30" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="245" endline="245" begincolumn="28" endcolumn="31" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Less' starts with uppercase character.
+</violation>
+<violation beginline="246" endline="246" begincolumn="28" endcolumn="34" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Greater' starts with uppercase character.
+</violation>
+<violation beginline="256" endline="256" begincolumn="22" endcolumn="28" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="256" endline="256" begincolumn="22" endcolumn="28" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="258" endline="258" begincolumn="25" endcolumn="31" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="258" endline="258" begincolumn="25" endcolumn="31" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+</file>
+<file name="/Users/mchinnappan/kural-demos/unpackaged/classes/ObjectAuditor.cls">
+<violation beginline="9" endline="9" begincolumn="14" endcolumn="26" rule="ApexSharingViolations" ruleset="Security" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_security.html#apexsharingviolations" priority="3">
+Apex classes should declare a sharing model if DML or SOQL is used
+</violation>
+<violation beginline="9" endline="181" begincolumn="14" endcolumn="1" rule="ExcessivePublicCount" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#excessivepubliccount" priority="3">
+This class has too many public methods and attributes
+</violation>
+<violation beginline="34" endline="145" begincolumn="17" endcolumn="5" rule="CognitiveComplexity" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#cognitivecomplexity" priority="3">
+The method 'queryObjects()' has a cognitive complexity of 20, current threshold is 15
+</violation>
+<violation beginline="34" endline="145" begincolumn="17" endcolumn="5" rule="NcssMethodCount" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#ncssmethodcount" priority="3">
+The method queryObjects() has an NCSS line count of 66
+</violation>
+<violation beginline="72" endline="72" begincolumn="23" endcolumn="37" rule="ApexSuggestUsingNamedCred" ruleset="Security" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_security.html#apexsuggestusingnamedcred" priority="3">
+Consider using named credentials for authenticated callouts
+</violation>
+<violation beginline="97" endline="97" begincolumn="17" endcolumn="52" rule="OneDeclarationPerLine" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#onedeclarationperline" priority="3">
+Use one statement for each line, it enhances code readability.
+</violation>
+<violation beginline="108" endline="108" begincolumn="41" endcolumn="57" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'LastModifiedByMap' starts with uppercase character.
+</violation>
+<violation beginline="153" endline="153" begincolumn="13" endcolumn="27" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="153" endline="153" begincolumn="13" endcolumn="27" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="155" endline="155" begincolumn="26" endcolumn="29" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Less' starts with uppercase character.
+</violation>
+<violation beginline="156" endline="156" begincolumn="26" endcolumn="32" rule="VariableNamingConventions" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#variablenamingconventions" priority="3">
+Variables should start with a lowercase character, 'Greater' starts with uppercase character.
+</violation>
+<violation beginline="165" endline="165" begincolumn="22" endcolumn="28" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="165" endline="165" begincolumn="22" endcolumn="28" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="167" endline="167" begincolumn="25" endcolumn="31" rule="IfStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="167" endline="167" begincolumn="25" endcolumn="31" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+</file>
+<file name="/Users/mchinnappan/kural-demos/unpackaged/classes/RecordTypeAuditor.cls">
+<violation beginline="8" endline="8" begincolumn="14" endcolumn="30" rule="ApexSharingViolations" ruleset="Security" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_security.html#apexsharingviolations" priority="3">
+Apex classes should declare a sharing model if DML or SOQL is used
+</violation>
+<violation beginline="8" endline="70" begincolumn="14" endcolumn="1" rule="ExcessivePublicCount" ruleset="Design" externalInfoUrl="https://pmd.github.io/pmd-6.47.0/pmd_rules_apex_design.html#excessivepubliccount" priority="3">
+This class has too many public methods and attributes
+</violation>
+</file>
+</pmd>

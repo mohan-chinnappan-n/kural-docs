@@ -1,0 +1,13 @@
+<pmd>
+<file name="filenamehere.cls" >
+<violation beginline="10" priority="p1" ruleset="code" externalInfoUrl="url1"> </violation>
+<violation beginline="12" priority="p2" ruleset="code" externalInfoUrl="url2"> </violation>
+<violation beginline="14" priority="p3" ruleset="code" externalInfoUrl="url3"> </violation>
+<violation beginline="15" priority="p4" ruleset="code" externalInfoUrl="url4"> </violation>
+</file>
+</pmd>
+
+
+
+
+
