@@ -5,6 +5,6 @@
 
    "sourcePath" :"/Users/mchinnappan/kural-demos/unpackaged/classes/",
    "outputFormat": "xml",
-   "outputFile" : "./pmd_results.xml"
+   "outputFile" : "./pmd-results.xml"
 
 }
