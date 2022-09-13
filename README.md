@@ -502,8 +502,9 @@ cat pmd-conf.json
 
 
 ```
-kural data:transform:xslt -i pmd-results.xml -t pmd-report.xslt > pmd-results.html
+kural data:transform:xslt -i pmd-results.xml -t pmd-report-v2.xslt > pmd-results.html
 ```
+- [pmd-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/pmd-report-v2.xslt)
 
 ![HTML Report demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/new_pmd-report-1.gif)
 ----
