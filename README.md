@@ -608,7 +608,13 @@ kural i18n:prepare -i input.txt -f en -t  ja  -x y
 kural i18n:stf -i Bilingual_fr_2022-09-14\ 0105.stf  > Bilingual_fr_2022-09-14\ 0105.stf.xml
 ```
 
+![Sample stf input](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/i18n/Bilingual_fr_2022-09-14-0105.stf)
+
+![Sample xml output](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/i18n/Bilingual_fr_2022-09-14-0105.stf.xml)
+
 ![Demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/i18n/i18n-stf-xml-1.webm.gif)
+
+
 -----
 
 <a name='vega'></a>
