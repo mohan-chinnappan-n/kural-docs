@@ -1,0 +1,56 @@
+/* We can use the special CSS pseudo-class :host to declare 
+  our CSS custom properties within our custom component contact
+
+  // :root is not available in Lightning web components. Use :host as described below.
+
+
+  format:
+  --[namespace]-[scope]-[component]-[element]-[category]-[property]-[attribute]-[state]
+
+  for example: buttons
+  https://www.lightningdesignsystem.com/components/buttons/#Styling-Hooks-Overview
+
+
+*/
+
+@import 'c/contactStyle';
+
+:host {
+
+
+    /* badge */
+    --gala-c-badge-color-background: brown;
+    --gala-c-badge-text-color: white;
+    --gala-c-badge-radius-border: 20rem;
+
+
+    /* card */
+    --gala-c-card-color-background: #ffcc99;
+    --gala-c-card-color-border:yellow;
+
+
+    /* =========================== */
+
+    /* badge
+    https://www.lightningdesignsystem.com/components/badges/#Styling-Hooks-Overview
+    */
+    --slds-c-badge-color-background: var(--gala-c-badge-color-background);
+    --slds-c-badge-text-color: var(--gala-c-badge-text-color);
+    --slds-c-badge-radius-border:var(--gala-c-badge-radius-border);
+
+
+
+    /* card 
+    https://www.lightningdesignsystem.com/components/cards/#Styling-Hooks-Overview
+    */
+    --slds-c-card-color-background: var(--gala-c-card-color-background);
+    --slds-c-card-color-border:var(--gala-c-card-color-border);
+    --slds-c-card-radius-border: 2rem;
+    --slds-c-card-heading-font-weight:900;
+    
+    --slds-c-card-heading-font-family:Monaco;
+
+
+
+
+}

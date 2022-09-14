@@ -1,0 +1,20 @@
+<template>
+
+
+    <lightning-card title="Idea Charts" icon-name="standard:screen">
+
+
+        <lightning-combobox
+        name="types"
+        label="Type"
+        value=""
+        placeholder="Select Chart Type"
+        options={options}
+        onchange={handleChange}
+        required
+    ></lightning-combobox>
+        <div class="chart slds-var-m-around_medium" lwc:dom="manual"></div>
+    </lightning-card>
+
+    
+</template>

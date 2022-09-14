@@ -1,0 +1,9 @@
+<template>
+   <p>{title}</p> 
+
+    <svg width="400" height="400" >
+   <template for:each={circles} for:item="circle">
+        <circle key={circle.id} cx={circle.cx} cy={circle.cy} r={circle.r} stroke="green" stroke-width="4" fill={circle.fill} />
+   </template>
+    </svg>
+</template>

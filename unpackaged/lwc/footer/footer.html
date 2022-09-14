@@ -1,0 +1,28 @@
+<template>
+    <footer role="contentinfo"  class="slds-p-around_small" style="padding:10px ;">
+        <div class="slds-grid slds-grid_align-spread2">
+            <template for:each={footerItems} for:item="item">
+              <p class="slds-col" key={item.label} style="color:black"> 
+                <a href={item.link} style="color:black; ;">{item.label}</a>
+              </p>
+           </template>
+          <p class="slds-col">&copy; 2022 Salesforce</p>
+
+          <!--
+           ref: https://developer.salesforce.com/docs/component-library/documentation/en/lwc/reference_page_reference_type
+           https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_navigate_page_types
+          -->
+
+          <!--
+       
+            <lightning-button label="Login" class="slds-var-m-around_medium"
+             onclick={navigateToLogin} >
+           </lightning-button>
+     
+           <a href={recordPageUrl}>Contact</a>
+          -->
+            
+
+        </div>
+      </footer> 
+</template>

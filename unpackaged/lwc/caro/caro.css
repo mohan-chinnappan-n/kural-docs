@@ -1,0 +1,48 @@
+.text-section {
+    position: absolute;
+    bottom: 0px;
+    color: #f2f2f2;
+    font-size: 15px;
+    background: rgba(5,0,0,.7);
+    text-align: center;
+    width: 100%;
+}
+
+ .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: darkred;
+    padding: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+ .next {
+     right: 0px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(5,0,0,.7);
+}
+
+.slide-num {
+padding: 10px;
+position: absolute;
+color: red;
+}
+
+.dot {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-color: blue;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.active, .active:hover {
+    background-color: red;
+
+}

@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-badge class="slds-theme_success" variant='brand' label={vt}>
+    </lightning-badge> Votes &nbsp;
+
+
+   <template if:false={sameUser}>
+       <lightning-button-group>
+            <lightning-button icon-name="utility:arrowup" disabled={finished} variant="success" label="Promote" onclick={handleUpVote}></lightning-button>
+            <lightning-button icon-name="utility:arrowdown"  disabled={finished}  variant="destructive" label="Demote" onclick={handleDownVote}></lightning-button>
+       </lightning-button-group>
+       <hr/>
+   </template> 
+</template>

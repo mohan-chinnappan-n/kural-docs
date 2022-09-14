@@ -1,0 +1,86 @@
+<template>
+    <lightning-card class='idea-container'>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:rtc_presence" variant="border-filled" 
+                 alternative-text="BrightIdeas"  
+                 size="large"></lightning-icon>
+                  &nbsp; Idea Management
+        </h3>
+
+        <lightning-card title="All Ideas" icon-name="standard:all">
+            <c-datatable config={dtConfig}></c-datatable>
+         </lightning-card>
+
+        <lightning-input type="search" onchange={handleSearchChange} 
+            class="slds-m-bottom_small" 
+            label="Search Ideas"
+            value={searchKey}>
+        </lightning-input>
+
+        <lightning-button disabled={disablePostNewIdeaBtn} variant='brand' icon-name="utility:edit" 
+                    title="Have an Idea to post?" label="Got New Idea?"
+                    onclick={handlePostNewIdea} >
+        </lightning-button>
+        <template if:true={showAddIdea}>
+            <c-idea-new  cid="09a3h000000bD9zAAE" ></c-idea-new>
+        </template>
+        
+        
+        <template if:true={showIdeasList}>
+            <lightning-card title="Search Results" icon-name="standard:report">
+                <lightning-datatable key-field="Id" data={allIdeas} columns={ideasColumns} show-row-number-column="true"
+                    sorted-by={sortedBy} sorted-direction={sortedDirection} onsort={sortColumns}
+                    max-row-selection="1" onrowselection={handelRowSelection} >  
+                </lightning-datatable>
+            </lightning-card>
+        </template>
+
+
+        <template if:true={showIdeaDetail}>
+            <div class="slds-grid slds-gutters slds-wrap">
+                <template for:each={allIdeas} for:index="index" for:item="idea">
+                    <!-- <c-idea-item key={idea.id} idea={idea}></c-idea-item> -->
+
+                    <div class="slds-col slds-size_1-of-1" key={idea.id}>
+                        <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+                          
+                            <lightning-layout>
+                                <lightning-layout-item padding="around-small">
+                                    <div  class="custom-box slds-box slds-p-around_medium slds-text-align_left">
+                                        <lightning-card title={idea.Title} icon-name="utility:light_bulb">
+                                            <template if:true={showAddComment}>
+                                                <c-idea-comment-util id={idea.Id} cid={idea.CommunityId} onaddcomment={handleAddCommentEvent}>
+                                                </c-idea-comment-util>
+                                            </template>
+                                            <div class="slds-p-horizontal_small">
+                                                <div>
+                                                  
+                                                    <c-idea-vote vt={idea.VoteTotal} cbid={idea.CreatedById}></c-idea-vote>
+                                                    <lightning-button variant="basic" icon-name="utility:new" label="New Comment"
+                                                        onclick={handleAddComment}> </lightning-button>
+                                                </div>
+                                                <img src={idea.CreatorSmallPhotoUrl}></img>
+                                                <lightning-formatted-rich-text value={idea.Body}></lightning-formatted-rich-text>
+                                                <p>{userId}</p>
+                                                <c-idea-comment id={idea.Id} cid={idea.CommunityId}></c-idea-comment>
+                                            </div>
+                                            <p slot="footer">{id.Title} </p>
+                                        </lightning-card>
+                                    </div>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+      
+        <!--
+        <c-charts ctype={chartType} cdata={chartData} clabel='Idea Current Status'></c-charts>
+        -->
+
+        <p slot="footer">(c) 2020 Salesforce.com</p>
+    </lightning-card>
+
+
+</template>

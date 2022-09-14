@@ -1,0 +1,5 @@
+{
+   "label": "ESLinting LWC",
+   "jsFolder": ["unpackaged/lwc/**/*.js"] 
+
+}

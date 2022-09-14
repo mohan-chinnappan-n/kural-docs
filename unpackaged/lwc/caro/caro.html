@@ -1,0 +1,27 @@
+<template>
+    <p>Slides per view = {slidesPerView}</p>
+    <div>
+        <template for:each={slidesData} for:item="slide">
+            <div key={slide.index}  class={slide.classes}>
+                <div class='slide-num'>{slide.sindex}/{slidesData.length}</div>
+                <img src={slide.img}>
+                <div class="text-section">
+
+                    <h3 class="slds-text-heading_large">{slide.caption}</h3>
+                    <div class="slds-text-heading_small">{slide.body}</div>
+                </div>
+            </div>
+        </template>
+        <a class='prev'>&#10094;</a>
+        <a class='next'>&#10095;</a>
+
+    </div>
+
+    <div class="slds-text-align_center slds-p-around_medium">
+        <template for:each={slidesData} for:item="slide">
+            <span key={slide.index}  class={slide.dotClasses} ></span>
+
+        </template>
+
+    </div>
+ </template>
