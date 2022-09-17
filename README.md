@@ -41,6 +41,7 @@
 
 ----
   - [Data Viz - vega](#vega)
+  - [Data Viz - chartjs](#chartjs)
 ----
   - [OCR](#ocr)
 ----
@@ -632,6 +633,55 @@ kural data:viz:vega -i field-usage.json
 
 
 
+-----
+<a name='chartjs'></a>
+## kural data:viz:chartjs
+-   Chartjs chart for the given data
+
+```
+kural data:viz:chartjs -i barchart.json
+
+```
+
+```
+cat barchart.json
+```
+
+```json
+{
+  "title": "Charts with Chartjs",
+   "width": 400, "height":400,  
+"type": "pie",
+  "data": {
+    "labels": [
+      "Apples",
+      "Mangos",
+      "Pear",
+      "Peach"
+    ],
+    "datasets": [
+      {
+        "label": "# of Friuts",
+        "data": [
+          12,
+          19,
+          3,
+          5
+        ],
+    "backgroundColor": ["cyan", "skyblue", "steelblue", "#99ccff"]
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": false
+      }
+    }
+  }
+}
+
+```
 -----
 
 <a name='ocr'></a>
