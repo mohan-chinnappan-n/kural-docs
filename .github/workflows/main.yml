@@ -1,0 +1,20 @@
+name: on-demand-auto-kural
+run-name: on-demand-auto-kural 
+
+on: [workflow_dispatch]
+jobs:
+  check-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install kural -g
+      
+      - name: Screenshots using kural
+        run: |
+           kural browser:pw:screenshot -s https://login.salesforce.com
+      
+      - name: Commit files
+        run: |
+          git add screen*.png
+          git commit -m "updated screenshot files"
+          git push origin HEAD
