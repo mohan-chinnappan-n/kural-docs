@@ -1,7 +1,7 @@
 name: on-demand-auto-kural
 run-name: on-demand-auto-kural 
 
-on: [workflow_dispatch]
+on: [push]
 jobs:
   check-deploy:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       
       - name: Screenshots using kural
         run: |
-           kural browser:pw:screenshot -s https://login.salesforce.com
+           kural browser:pw:screenshot -s https://login.salesforce.com --help
       
       - name: Commit files
         run: |
