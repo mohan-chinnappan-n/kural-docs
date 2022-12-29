@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install kural -g
+      - run: sudo npx playwright install-deps  
       
       - name: Screenshots using kural
         run: |
