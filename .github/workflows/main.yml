@@ -11,10 +11,5 @@ jobs:
       
       - name: Screenshots using kural
         run: |
-           kural browser:pw:screenshot -s https://login.salesforce.com --help
-      
-      - name: Commit files
-        run: |
-          git add screen*.png
-          git commit -m "updated screenshot files"
-          git push origin HEAD
+           kural browser:pw:screenshot -s https://login.salesforce.com --help 
+  
