@@ -1,5 +1,5 @@
-name: on-demand-auto-kural
-run-name: on-demand-auto-kural 
+name: check-kural-install
+run-name: check-kural-install
 
 on: [push]
 jobs:
