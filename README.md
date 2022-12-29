@@ -18,6 +18,8 @@
 ------
   - [browser:auto](#auto)
 -----
+  - [browser:pw:screenshot](#pw_screenshot)
+-----
   - [dot2svg](#dot2svg)
   - [viz:dwg:mermaid](#mermaidEd)
   - [viz:uml:seq](#umlSeqEd)
@@ -746,6 +748,35 @@ FROM Account
 
 ```
 
+<a name='pw_screenshot'></a>
+
+ ```
+ kural browser:pw:screenshot -s https://github.com --help
+USAGE
+  $ kural kural browser:pw:screenshot -s
+
+FLAGS
+  -s, --site=<value>  (required) [default: https://www.salesforce.com] Site to run
+
+DESCRIPTION
+  Get screenshots for the given url in 3 browser types: chromium, firefox and webkit
+
+EXAMPLES
+  $ kural browser:pw:screenshot -s https://www.apple.com
+
+~/playwright-book/img  >kural browser:pw:screenshot -s https://github.com --help
+USAGE
+  $ kural browser:pw:screenshot -s
+
+FLAGS
+  -s, --site=<value>  (required) [default: https://www.salesforce.com] Site to run
+
+DESCRIPTION
+  Get screenshots for the given url in 3 browser types: chromium, firefox and webkit
+
+EXAMPLES
+  $ kural browser:pw:screenshot -s https://www.apple.com
+```
 
 ----
 
