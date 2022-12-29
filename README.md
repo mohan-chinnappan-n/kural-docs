@@ -749,6 +749,7 @@ FROM Account
 ```
 
 <a name='pw_screenshot'></a>
+## Screenshots of the given site
 
  ```
  kural browser:pw:screenshot -s https://github.com --help
